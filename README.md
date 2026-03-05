@@ -19,3 +19,6 @@ Stránka produktu bude mít obrázky ukazující produkt. Pod nimi bude stát ce
 V Košíku se zobrazí všechny přidané produkty, jejich hlavní obrázky, ceny a počty zakoupených produktů. Dále bude vespodu zobrazena konečná cena všech produků sečtených dohromady. Nakonec bude vespodu stránky tlačítko koupit které přihlášeného uživatele přesměruje na platící bránu.
 ## Nepřihlášený uživatel
 Nepřihlášení uživatelé budou schopni přidávat produkty do košíku, avšak při zmáčknutí tlačítka "zakoupit" budou přesměrování na stránku Login. Kromě tohoto bude mít nepřihlášený uživatel stejná práva jako přihlášený.
+![userflow](https://github.com/user-attachments/assets/70e80353-67b2-4101-a011-f4639e58c301)
+![wireframe_1](https://github.com/user-attachments/assets/a1431b83-6231-4a3f-8f57-280f8ca17d1e)
+![wireframe_2](https://github.com/user-attachments/assets/0dcb0cdd-17e0-4ffb-987b-98ac971d1e23)
