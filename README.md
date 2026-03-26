@@ -22,3 +22,4 @@ Nepřihlášení uživatelé budou schopni přidávat produkty do košíku, avš
 ![userflow](https://github.com/user-attachments/assets/70e80353-67b2-4101-a011-f4639e58c301)
 ![wireframe_1](https://github.com/user-attachments/assets/a1431b83-6231-4a3f-8f57-280f8ca17d1e)
 ![wireframe_2](https://github.com/user-attachments/assets/0dcb0cdd-17e0-4ffb-987b-98ac971d1e23)
+<img width="598" height="498" alt="image" src="https://github.com/user-attachments/assets/744e3f2d-9a60-491c-8126-cc7a56779ae9" />
