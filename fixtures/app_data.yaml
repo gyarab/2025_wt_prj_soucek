@@ -1,0 +1,125 @@
+- model: app.user
+  pk: 1
+  fields:
+    name: Alice Novak
+    email: alice@example.com
+    password: password123
+
+- model: app.user
+  pk: 2
+  fields:
+    name: Bob Svoboda
+    email: bob@example.com
+    password: password123
+
+- model: app.user
+  pk: 3
+  fields:
+    name: Clara Jelinek
+    email: clara@example.com
+    password: password123
+
+- model: app.produkt
+  pk: 1
+  fields:
+    name: "Čokoláda"
+    description: "Rich dark chocolate bar with sea salt.
+      Great for gifting or everyday treats."
+    price: "4.20"
+
+- model: app.produkt
+  pk: 2
+  fields:
+    name: "Káva Premium"
+    description: "Freshly roasted espresso beans from Colombia."
+    price: "12.50"
+
+- model: app.produkt
+  pk: 3
+  fields:
+    name: "Brašna"
+    description: "Stylish canvas tote bag with reinforced handles."
+    price: "18.99"
+
+- model: app.produkt
+  pk: 4
+  fields:
+    name: "Notebook"
+    description: "A5 ruled notebook for notes, sketches, and lists."
+    price: "7.30"
+
+- model: app.objednavka
+  pk: 1
+  fields:
+    user: 1
+    created_at: 2026-04-15T10:05:00Z
+
+- model: app.objednavka
+  pk: 2
+  fields:
+    user: 2
+    created_at: 2026-04-15T11:20:00Z
+
+- model: app.mnozstvi
+  pk: 1
+  fields:
+    order: 1
+    product: 1
+    quantity: 2
+
+- model: app.mnozstvi
+  pk: 2
+  fields:
+    order: 1
+    product: 4
+    quantity: 1
+
+- model: app.mnozstvi
+  pk: 3
+  fields:
+    order: 2
+    product: 2
+    quantity: 1
+
+- model: app.mnozstvi
+  pk: 4
+  fields:
+    order: 2
+    product: 3
+    quantity: 1
+
+- model: app.recenze
+  pk: 1
+  fields:
+    product: 1
+    user: 2
+    rating: 5
+    comment: "Delicious taste and perfect balance of sweet and salt."
+    created_at: 2026-04-15T13:00:00Z
+
+- model: app.recenze
+  pk: 2
+  fields:
+    product: 2
+    user: 1
+    rating: 4
+    comment: "Great aroma and smooth crema."
+    created_at: 2026-04-15T13:15:00Z
+
+- model: app.recenze
+  pk: 3
+  fields:
+    product: 3
+    user: 3
+    rating: 5
+    comment: "Spacious and durable, exactly as expected."
+    created_at: 2026-04-15T13:40:00Z
+
+- model: app.recenze
+  pk: 4
+  fields:
+    product: 4
+    user: 1
+    rating: 5
+    comment: "Perfect for daily notes and planning."
+    created_at: 2026-04-15T14:05:00Z
