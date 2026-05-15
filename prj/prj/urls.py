@@ -10,3 +10,5 @@ urlpatterns = [
     path('', views.render_homepage, name='homepage'),
     path('about/', views.render_about, name='about'),
 ]
+
+
