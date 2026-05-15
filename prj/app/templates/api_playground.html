@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}API Playground{% endblock %}
+
+{% block content %}
+<h1 class="page-title">API Playground</h1>
+<p class="muted">Test your API endpoints here.</p>
+
+
+<!-- show number input and button, show product GET in pre -->
+<div class="api-test">
+    <h2>Test Product GET</h2>
+    <input type="number" id="product-id" placeholder="Enter product ID">
+    <button id="get-product" class="btn btn-primary" type="button">Get Product</button>
+</div>
+{% endblock %}
