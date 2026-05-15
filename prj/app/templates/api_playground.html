@@ -11,6 +11,22 @@
 <div class="api-test">
     <h2>Test Product GET</h2>
     <input type="number" id="product-id" placeholder="Enter product ID">
-    <button id="get-product" class="btn btn-primary" type="button">Get Product</button>
+    <button id="fetch-product-btn" onclick="fetchProduct()">Get Product</button>
+    <pre id="product-response" class="response"></pre>
 </div>
+
+<script>
+    function fetchProduct() {
+        const productId = document.getElementById('product-id').value;
+        fetch(`/api/products/${productId}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('product-response').textContent = JSON.stringify(data, null, 2)
+            })
+            .catch(error => {
+                document.getElementById('product-response').textContent = 'Error fetching product'
+            })
+        }
+        console.log('API Playground loaded')
+</script>
 {% endblock %}
