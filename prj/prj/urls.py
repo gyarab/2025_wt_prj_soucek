@@ -9,7 +9,7 @@ urlpatterns = [
     path('api/', api.urls),
     path('', views.render_homepage, name='homepage'),
     path('about/', views.render_about, name='about'),
-    path('api/playground/', views.api_playground, name='api_playground'),
+    path('api/playground/', views.render_api_playground, name='api_playground'),
 ]
 
 

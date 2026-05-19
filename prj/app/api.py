@@ -9,6 +9,16 @@ api = NinjaAPI()
 
 # ---------- Review endpoints ----------
 
+@api.get("/products/{product_id}")
+def get_product(request, product_id: int):
+    product = get_object_or_404(Produkt, pk=product_id)
+
+    return {
+        "id": product.id,
+        "name": product.name,
+        "price": product.price,
+        "description": product.description,
+    }
 
 @api.get("/products/{product_id}/reviews", response=List[ReviewOut], tags=["reviews"])
 def list_reviews(request, product_id: int):
