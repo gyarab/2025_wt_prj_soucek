@@ -1,0 +1,58 @@
+- model: app.user
+  pk: 4
+  fields:
+    name: David Novák
+    email: david@example.com
+    password: password123
+
+- model: app.produkt
+  pk: 5
+  fields:
+    name: "Heřmánkový čaj"
+    description: "Uklidňující heřmánkový čaj, 20 sáčků, vhodný před spaním."
+    price: "3.50"
+
+- model: app.produkt
+  pk: 6
+  fields:
+    name: "Květový hydrolát"
+    description: "Jemný květový hydrolát vhodný pro tonikum a obklady."
+    price: "9.99"
+
+- model: app.objednavka
+  pk: 3
+  fields:
+    user: 4
+    created_at: 2026-05-01T09:00:00Z
+
+- model: app.mnozstvi
+  pk: 5
+  fields:
+    order: 3
+    product: 5
+    quantity: 2
+
+- model: app.mnozstvi
+  pk: 6
+  fields:
+    order: 3
+    product: 6
+    quantity: 1
+
+- model: app.recenze
+  pk: 5
+  fields:
+    product: 5
+    user: 4
+    rating: 4
+    comment: "Skvělý na večerní relax, jemná chuť."
+    created_at: 2026-05-01T10:00:00Z
+
+- model: app.recenze
+  pk: 6
+  fields:
+    product: 6
+    user: 1
+    rating: 5
+    comment: "Skvělé jako pleťové tonikum, velmi jemný vůně."
+    created_at: 2026-05-01T10:15:00Z
