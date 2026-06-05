@@ -8,6 +8,19 @@ from .schemas import ReviewOut, ReviewIn, OrderOut, MessageSchema
 api = NinjaAPI()
 
 # ---------- Review endpoints ----------
+@api.get("/products", response=List[dict])
+def list_products(request):
+    products = Produkt.objects.all()
+
+    return [
+        {
+            "id": p.id,
+            "name": p.name,
+            "price": p.price,
+            "description": p.description,
+        }
+        for p in products
+    ]
 
 @api.get("/products/{product_id}")
 def get_product(request, product_id: int):
